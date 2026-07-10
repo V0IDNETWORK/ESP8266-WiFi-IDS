@@ -1,16 +1,5 @@
-/**
- * WiFi Security Monitor — main entry point
- *
- * Wires together: FrameSniffer (capture) -> DeauthDetector + RogueAPDetector
- * (analysis) -> AlertLogger (storage) -> WebDashboard (read-only display).
- *
- * This firmware is receive-only. It does not transmit deauth, disassoc, or
- * spoofed beacon frames at any point. See README.md for scope and ethics.
- */
-
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
-
 #include "FrameSniffer.h"
 #include "DeauthDetector.h"
 #include "RogueAPDetector.h"
