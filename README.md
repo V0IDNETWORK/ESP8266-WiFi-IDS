@@ -1,5 +1,8 @@
 # WiFi Security Monitor
-
+![Platform](https://img.shields.io/badge/Platform-ESP8266-blue)
+![Framework](https://img.shields.io/badge/Framework-PlatformIO-orange)
+![Language](https://img.shields.io/badge/C%2B%2B-17-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 A passive, receive-only 802.11 anomaly detector for ESP8266, built as a
 university-lab research platform for studying WiFi management-frame attacks
 and how to detect them.
