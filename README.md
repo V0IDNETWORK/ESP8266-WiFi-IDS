@@ -3,6 +3,7 @@
 ![Framework](https://img.shields.io/badge/Framework-PlatformIO-orange)
 ![Language](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
 A passive, receive-only 802.11 anomaly detector for ESP8266, built as a
 university-lab research platform for studying WiFi management-frame attacks
 and how to detect them.
@@ -141,3 +142,10 @@ logger → dashboard. Nothing in this pipeline writes back to the radio.
 - Espressif ESP8266 Non-OS SDK API reference (promiscuous mode)
 - Bellardo & Savage, *"802.11 Denial-of-Service Attacks: Real Vulnerabilities
   and Practical Solutions"*, USENIX Security 2003
+
+  ## Limitations
+
+- ESP8266 monitors one WiFi channel at a time.
+- Hidden SSIDs cannot always be identified.
+- PMF-protected networks reduce detectable deauthentication attacks.
+- Detection is heuristic-based and may produce false positives.
