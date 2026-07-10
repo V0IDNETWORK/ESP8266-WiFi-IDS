@@ -1,14 +1,4 @@
 #pragma once
-/**
- * FrameSniffer
- * ------------
- * Puts the ESP8266 radio into promiscuous (monitor) mode and parses raw
- * 802.11 management frames into a structured, easy-to-consume format.
- *
- * RECEIVE-ONLY: this module never calls any packet-transmit SDK function.
- * Its only job is to observe and parse traffic already present in the air.
- */
-
 #include <Arduino.h>
 #include <functional>
 
