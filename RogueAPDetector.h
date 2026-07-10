@@ -1,21 +1,4 @@
 #pragma once
-/**
- * RogueAPDetector
- * ---------------
- * Periodically performs a standard active WiFi scan (the same benign API
- * any WiFi-analyzer app uses) and looks for signatures of an evil-twin /
- * rogue access point:
- *
- *  - The same SSID broadcast from more than one BSSID (MAC address),
- *    when that SSID is on a known-good allowlist with an expected BSSID.
- *  - A known SSID suddenly appearing on a different channel than its
- *    baseline.
- *
- * This module only calls WiFi.scanNetworks(), which is a passive-to-the-
- * network, receive-only operation identical to opening any phone's WiFi
- * settings page.
- */
-
 #include <Arduino.h>
 
 struct KnownAP {
